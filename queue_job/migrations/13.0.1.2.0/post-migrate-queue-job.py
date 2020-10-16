@@ -13,7 +13,5 @@ def migrate(cr, version):
                 ('company_id', '=', False),
                 ('company_id', 'in', company_ids)
             ]"""
-            values = {
-                "domain_force": domain,
-            }
+            values = {"domain_force": domain}
             rule.write(values)

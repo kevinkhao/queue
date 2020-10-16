@@ -23,7 +23,7 @@ class TestRelatedAction(common.SavepointCase):
         self.assertEqual(act_kwargs, {"b": 4})
 
     def test_decorator_empty(self):
-        """ Job with decorator without value disable the default action
+        """Job with decorator without value disable the default action
 
         The function is::
 

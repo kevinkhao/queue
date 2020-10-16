@@ -37,7 +37,7 @@ class TestQueueJob(models.Model):
     @job
     @related_action(action="testing_related_method")
     def testing_method(self, *args, **kwargs):
-        """ Method used for tests
+        """Method used for tests
 
         Return always the arguments and keyword arguments received
         """
@@ -89,7 +89,7 @@ class TestQueueChannel(models.Model):
 
     @property
     def dummy_property(self):
-        """ Return foo
+        """Return foo
 
         Only there to check that properties are compatible
         with the automatic registration of job methods
